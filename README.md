@@ -64,17 +64,19 @@ The position sizing methodology is based on **dynamic volatility targeting**:
 
 ---
 
+## 🚀 How to Run
+1. Place your datasets (`.csv`) inside `./data/` with columns:
+   Date, Open, High, Low, Close, Volume
 2. (Optional) Edit `config.yaml` to tweak parameters.
 3. Run the backtester:
-```bash
+   
+'''bash
 python quant_backtester.py --data_dir ./data --out_dir ./out --config ./config.yaml
-
-View results in:
+  
+4. View results in:
 
 out/metrics_summary.csv (summary table)
 
 out/*_trades.csv (trade logs)
 
 out/*_equity.csv (equity curve data)
-## 🚀 How to Run
-1. Place your datasets (`.csv`) inside `./data/` with columns:
